@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "Klogger",
+    "description": "Klogger sees everything",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["js/jquery.js", "js/klogger.js"],
+            "run_at":"document_end"
+        }
+    ],
+
+    "permissions": [
+        "https://klogger.roupid.com/"
+    ],
+    "browser_action": {
+        "default_icon": "assets/icon.fw.png",
+        "default_popup": "pages/popup.html"
+    }
+}
