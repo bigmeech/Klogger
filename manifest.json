@@ -4,6 +4,10 @@
     "name": "Klogger",
     "description": "Klogger sees everything",
     "version": "1.0",
+    "background":{
+      "scripts":["js/logger.js"],
+      "persistent": false
+    },
     "content_scripts": [
         {
             "matches": ["*://*/*"],
@@ -13,7 +17,7 @@
     ],
 
     "permissions": [
-        "https://klogger.roupid.com/"
+      "storage"
     ],
     "browser_action": {
         "default_icon": "assets/icon.fw.png",
