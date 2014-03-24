@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TypeLogger Options</title>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        html,body
+        {
+            font-family:calibri;
+            background-color:#eee;
+            margin: 0 auto;
+            width: 800px;
+            height: 100%;
+        }
+
+        p{
+            margin:0;
+            padding:0;
+        }
+
+        .captured{
+            font-size:17px;
+        }
+
+        ul{
+            list-style:none;
+            margin:20px;
+            padding:0
+        }
+
+        .log{
+            margin:5px;
+            color:#0088cc;
+
+        }
+
+        .log-header
+        {
+            margin:5px;
+            padding-bottom:5px;
+            border-bottom:1px solid #000;
+            font-size:20px;
+            color:#000;
+        }
+
+        .time{
+            font-size:13px;
+            font-style:italic;
+            color:#0088cc;
+        }
+        .log-title{
+            color:#000;
+        }
+        a{
+            color:#0088cc;
+            text-decoration:none;
+        }
+
+        .options-container
+        {
+            background-color: #f5f5f5;
+            width: 600px;
+            height: 100%;
+        }
+        h1{
+            margin: 0;
+        }
+    </style>
+</head>
+<body style="background-color: #f5f5f5">
+<div class="options-container">
+    <h1>
+        TypeLogger
+    </h1>
+    <div style="margin-bottom: 0" class="form-actions">
+        <a class="btn btn-mini">Show all logs</a> <a class="btn btn-mini">Clear Logs</a> <a class="btn btn-mini" target="_blank" href="chrome-extension://jhamadpolfimoncompdlnlgpdpkfipdj/pages/options.html">Capture Settings</a>
+    </div>
+</div>
+
+<script src="../js/options.js"></script>
+</body>
+</html>

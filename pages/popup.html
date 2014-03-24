@@ -3,58 +3,33 @@
 <head>
     <title></title>
     <link href="../style/css.css" rel="stylesheet" type="text/css"/>
-    <script src="../js/jquery.js"></script>
+    <link href="../style/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <style>
-        /* Styles go here */
-
-        html,body
-        {
-            font-family:calibri;
-            background-color:#eee;
-            min-width: 400px;
+        html,body{
+            width: 400px;
+            background-color: #fcfcfc;
         }
-
-        p{
-            margin:0;
-            padding:0;
-        }
-
         .captured{
-            font-size:17px;
+            font-size:20px;
         }
 
         ul{
             list-style:none;
-            margin:20px;
+            margin-left:20px;
             padding:0
         }
-
-        .log{
-            margin:5px;
-            color:#0088cc;
-
+        .log-header{
+            font-size: 15px;
+        }
+        #log-container{
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
         }
 
-        .log-header
-        {
-            margin:5px;
-            padding-bottom:5px;
-            border-bottom:1px solid #000;
-            font-size:20px;
-            color:#000;
-        }
-
-        .time{
-            font-size:13px;
-            font-style:italic;
-            color:#0088cc;
-        }
-        .log-title{
-            color:#000;
-        }
-        a{
-            color:#0088cc;
-            text-decoration:none;
+        p{
+            margin: 0;
+            font-family: Calibri;
         }
     </style>
 </head>
@@ -64,7 +39,7 @@
     <ul>
         <li>
             <div class="log">
-                <p class="log-title">Facebook - Larry Eliemenye</p>
+                <p class="log-title">Log Title</p>
                 <p class="captured">Tolu i dont know what to say to you at all</p>
                 <p class="time">23rd July 2014 12:23:45</p>
                 <p><a href="#">http://www.facebook.com/login</a></p>
@@ -72,9 +47,13 @@
         </li>
     </ul>
     <p class="log-header"></p>
-    <div>
-        <button>Show all logs</button> <button>Clear Logs</button><button>Capture Settings</button>
-    </div>
 </div>
+<div style="margin-bottom: 0" class="form-actions">
+    <a class="btn btn-mini" id="toggleSwitch" title="Capture Switch" data-toggle="button">Turn Off</a><a class="btn btn-mini" title="Takes you to the main application area with more capturing options" target="_blank" href="chrome-extension://jhamadpolfimoncompdlnlgpdpkfipdj/pages/options.html">Control Panel</a>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/klogger.js"></script>
 </body>
 </html>
