@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-
-    "name": "Klogger",
-    "description": "Klogger sees everything",
+    "name": "TypeLogger",
+    "description": "Watches every web page and stores everything you type. Usesful if you need to know what someone is doing on your browser",
     "version": "1.0",
+    "icons":{"128": "assets/icon_128..fw.png"},
     "background":{
       "scripts":["js/logger.js"],
       "persistent": false
@@ -20,7 +20,7 @@
       "storage"
     ],
     "browser_action": {
-        "default_icon": "assets/icon.fw.png",
+        "default_icon": "assets/icon_64..fw.png",
         "default_popup": "pages/popup.html"
     }
 }
