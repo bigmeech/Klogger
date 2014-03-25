@@ -1,8 +1,7 @@
 (function($){
-
   KLOGGER={}
   KLOGGER.lastlog= {};
-  KLOGGER.toggleSwitch = $('#toggleSwitch');
+
 
   /**
   var typelogger = angular.module('typelogger',[]);
@@ -14,13 +13,14 @@
       })
   });
      **/
-  //initialises stuff, also attaches events to every textboxe's unb
+  //initialises stuff, crawls every webpage in search for input controls to latch unto
   KLOGGER.init=function(){
     var isSupported = "localStorage" in window,
         error = {},
         store = null,
         log = {}
 
+    KLOGGER.toggleSwitch = $('#toggleSwitch');
 
     if(isSupported){
       KLOGGER.logPort = chrome.runtime.connect({name:"klogger"})
@@ -60,7 +60,7 @@
       data:log
     }
     chrome.runtime.sendMessage(message,function(msg){
-        KLOGGER.displayLog(msg)
+        console.log("Log Sent to event page!");
     });
   }
 
